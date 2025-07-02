@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-+j6!1=d@%u)c2o_vmtdgs@!-%svcshd+r50ai1!o^f4#^!%8uo
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ['namits.shop', 'www.namits.shop', 'api.namits.shop']
 
 
 # Application definition
@@ -150,7 +150,8 @@ EMAIL_HOST_USER = 'jainnamit34@gmail.com'
 EMAIL_HOST_PASSWORD = 'ofpz psiv bfxx sqxb'  # use app password if 2FA is enabled
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",  # your frontend URL
+    "https://namits.shop",
+    "https://www.namits.shop",
 ]
 # settings.py
 SITE_NAME = "Bombay Corner"  # Replace "MyShop" with your actual site name
