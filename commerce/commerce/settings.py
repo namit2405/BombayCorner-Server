@@ -26,11 +26,7 @@ SECRET_KEY = 'django-insecure-+j6!1=d@%u)c2o_vmtdgs@!-%svcshd+r50ai1!o^f4#^!%8uo
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    "namits.shop",
-    "www.namits.shop",
-    "api.namits.shop",
-    "127.0.0.1",  # optional, for local testing
-    "localhost",  # optional
+    "api.namits.shop"
 ]
 
 
