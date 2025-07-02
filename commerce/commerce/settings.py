@@ -152,6 +152,7 @@ EMAIL_HOST_PASSWORD = 'ofpz psiv bfxx sqxb'  # use app password if 2FA is enable
 CORS_ALLOWED_ORIGINS = [
     "https://namits.shop",
     "https://www.namits.shop",
+    "https://api.namits.shop",
 ]
 # settings.py
 SITE_NAME = "Bombay Corner"  # Replace "MyShop" with your actual site name
