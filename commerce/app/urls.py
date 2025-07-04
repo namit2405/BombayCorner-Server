@@ -1,7 +1,16 @@
 from django.urls import path
 from . import views
 from rest_framework.authtoken.views import obtain_auth_token
-urlpatterns = [ 
+from rest_framework.response import Response
+from rest_framework.decorators import api_view
+
+@api_view(['GET'])
+def api_root(request):
+    return Response({"message": "Welcome to the Bombay Corner API!"})
+ 
+ 
+urlpatterns = [
+   path('', api_root), 
    path('signup/',views.SignupView.as_view(),name='signup'),
    path('login/',views.LoginView.as_view(),name='login'),
    path('logout/',views.LogoutView.as_view(),name='logout'),
