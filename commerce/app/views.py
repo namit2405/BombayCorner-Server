@@ -52,8 +52,6 @@ class VerifyOTPView(APIView):
             return Response({"verified": True})
         return Response({"verified": False}, status=400)
 
-def home(request):
-    return render(request, "home.html")
 
 class SignupView(APIView):
     def post(self, request, *args, **kwargs):
