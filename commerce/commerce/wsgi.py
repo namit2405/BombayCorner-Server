@@ -11,7 +11,7 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-settings_module = 'commerce.deployment_settings' if 'RENDER_EXTERNAL_HOSTNAME' in os.environ else 'commerce.settings'
+settings_module = 'commerce.commerce.deployment_settings' if 'RENDER_EXTERNAL_HOSTNAME' in os.environ else 'commerce.commerce.settings'
 os.environ.setdefault('DJANGO_SETTINGS_MODULE',settings_module )
 
 application = get_wsgi_application()
