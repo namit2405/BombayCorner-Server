@@ -25,9 +25,7 @@ SECRET_KEY = 'django-insecure-+j6!1=d@%u)c2o_vmtdgs@!-%svcshd+r50ai1!o^f4#^!%8uo
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    "api.namits.shop"
-]
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -51,7 +49,6 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -124,7 +121,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = 'static/'
-STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATICFILES_DIRS = [
     BASE_DIR / "static",
 ]
@@ -152,7 +148,7 @@ EMAIL_HOST_USER = 'jainnamit34@gmail.com'
 EMAIL_HOST_PASSWORD = 'ofpz psiv bfxx sqxb'  # use app password if 2FA is enabled
 
 CORS_ALLOWED_ORIGINS = [
-    "https://api.namits.shop",
+    "http://localhost:5173",  # your frontend URL
 ]
 # settings.py
-SITE_NAME = "Bombay Corner"  # Replace "MyShop" with your actual site name
+SITE_NAME = "BombayCorner"  # Replace "MyShop" with your actual site name
