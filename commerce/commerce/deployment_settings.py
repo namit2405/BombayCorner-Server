@@ -21,9 +21,9 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-# CORS_ALLOWED_ORIGINS = [
-#     "http://localhost:5173",  # your frontend URL
-# ]
+CORS_ALLOWED_ORIGINS = [
+    "https://namits.shop/"  # your frontend URL
+]
 
 STORAGES = {
     "default" : {
