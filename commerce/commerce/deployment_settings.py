@@ -22,7 +22,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "https://namits.shop/"  # your frontend URL
+    "https://namits.shop"  # your frontend URL
 ]
 
 STORAGES = {
